@@ -1,0 +1,4 @@
+[submodule "picotool"]
+	path = picotool
+	url = git@github.com:dxu/picotool.git
+	branch = master
