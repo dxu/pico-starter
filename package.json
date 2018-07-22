@@ -1,6 +1,6 @@
 {
   "name": "pico-starter",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "PICO8 Starter Kit",
   "main": "index.js",
   "repository": "git@github.com:dxu/pico-starter.git",
