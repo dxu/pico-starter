@@ -1,3 +1,5 @@
+samplepackage = require('sample')
+
 x = 64  y = 64
 function _update()
  if (btn(0)) then x=x-1 end
@@ -7,6 +9,5 @@ function _update()
 end
 
 function _draw()
- rectfill(0,0,127,127,5)
- circfill(x,y,7,14)
+  samplepackage.samplefunc()
 end

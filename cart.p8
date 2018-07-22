@@ -1,6 +1,25 @@
 pico-8 cartridge // http://www.pico-8.com
 version 8
 __lua__
+package={loaded={},_c={}}
+package._c["sample"]=function()
+local samplepackage = {
+  samplefunc = function()
+   rectfill(0,0,127,127,5)
+   circfill(x,y,7,14)
+  end
+}
+
+return samplepackage
+end
+function require(p)
+local l=package.loaded
+if (l[p]==nil) l[p]=package._c[p]()
+if (l[p]==nil) l[p]=true
+return l[p]
+end
+samplepackage = require('sample')
+
 x = 64  y = 64
 function _update()
  if (btn(0)) then x=x-1 end
@@ -10,8 +29,7 @@ function _update()
 end
 
 function _draw()
- rectfill(0,0,127,127,5)
- circfill(x,y,7,14)
+  samplepackage.samplefunc()
 end
 __gfx__
 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
