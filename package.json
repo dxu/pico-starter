@@ -7,10 +7,11 @@
   "author": "David <xudavidb@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "picotool": "https://github.com/dxu/picotool.git",
     "watch": "^1.0.2"
   },
   "scripts": {
     "watch": "./node_modules/watch/cli.js 'yarn run build' ./src",
-    "build": "./picotool/p8tool build *.p8 --lua ./src/root.lua"
+    "build": "./node_modules/picotool/p8tool build *.p8 --lua ./src/root.lua"
   }
 }

@@ -16,6 +16,15 @@ minimist@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.0.tgz#a35008b20f41383eec1fb914f4cd5df79a264284"
 
+"picotool@https://github.com/dxu/picotool":
+  version "0.0.0"
+  resolved "https://github.com/dxu/picotool#7494fad5e632e83da44dd0b885dc09f56a036028"
+
+"picotool@https://github.com/dxu/picotool.git":
+  version "0.0.0"
+  uid "7494fad5e632e83da44dd0b885dc09f56a036028"
+  resolved "https://github.com/dxu/picotool.git#7494fad5e632e83da44dd0b885dc09f56a036028"
+
 watch@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/watch/-/watch-1.0.2.tgz#340a717bde765726fa0aa07d721e0147a551df0c"
