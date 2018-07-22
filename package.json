@@ -1,0 +1,16 @@
+{
+  "name": "pico-starter",
+  "version": "0.0.0",
+  "description": "PICO8 Starter Kit",
+  "main": "index.js",
+  "repository": "git@github.com:dxu/pico-starter.git",
+  "author": "David <xudavidb@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "watch": "^1.0.2"
+  },
+  "scripts": {
+    "watch": "./node_modules/watch/cli.js 'yarn run build' ./src",
+    "build": "./picotool/p8tool build *.p8 --lua ./src/root.lua"
+  }
+}
